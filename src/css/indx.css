@@ -1,0 +1,169 @@
+/* common */
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+p {
+	margin: 0;
+}
+
+.content {
+	width: 1120px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+/* left start */
+
+.left {
+	float: left;
+	width: 400px;
+	height: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+	background: #d0d0d0;
+}
+
+.left-unit {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.left .person img {
+	width: 40px;
+	height: 40px;
+}
+
+.left .person-name {
+	display: inline-block;
+	width: 200px;
+}
+
+.left .person-head {
+	border: 1px solid #fff;
+}
+
+.left-unit .img-send {
+	margin: 5px 0;
+}
+
+.left .unit-main {
+	float: left;
+	width: 70%;
+}
+
+.left .unit-aside {
+	width: 30%;
+	float: left;
+	padding-left: 5px;
+	box-sizing: border-box;
+}
+
+.left .unit-aside button {
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.emoji-box {
+	width: 400px;
+	height: 200px;
+	border: 1px solid #000;
+	position: absolute;
+	left: 110%;
+	z-index: 50;
+	background: #fff;
+	display: none;
+}
+
+.emoji-wrap {
+	padding: 5px;
+}
+
+.emoji-icon img {
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+/* left end */
+
+/* right start */
+
+.right {
+	float: left;
+	width: 720px;
+	min-height: 100%;
+	background: #9a9a9a;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.right-main {
+	background: #fff;
+	min-height: 800px;
+	padding: 5px;
+}
+
+.del {
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	min-height: 80px;
+}
+
+.right-item {
+	position: relative;
+}
+
+.right-item:hover .del {
+	display: block;
+}
+
+.del-btn {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 180px;
+	height: 50px;
+	border: none;
+	background: #fff;
+	cursor: pointer;
+}
+
+.right-start {
+	height: 1px;
+}
+
+.right-end {
+	height: 1px;
+}

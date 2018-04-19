@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>对话生成器</title>
+	<link rel="stylesheet" href="./src//css/indx.css">
+	<link rel="stylesheet" href="./src//css//normalize.css">
+</head>
+
+<body>
+	<div class="content clearfix">
+		<!-- input -->
+		<div class="left">
+			<div class="left-top">
+				<button id="copyPage">点击复制内容</button>
+			</div>
+			<div class="left-unit clearfix">
+				<div class="unit-top">
+					<div class="person">
+						<p id="person1NameInput" class="person-name" contenteditable="true">名字1</p>
+						<img src="https://dummyimage.com/30x30.jpg/&text=pic" class="person-head" id="person1Head">
+					</div>
+					<div class="img-send">
+						<input type="text" name="person1ImgSend" id="person1HeadInput" placeholder="输入图片地址" class="send-url">
+						<input type="button" value="修改头像" class="send-btn" id="person1HeadSend">
+					</div>
+				</div>
+				<div class="unit-main">
+					<textarea class="textarea" cols="30" rows="10" placeholder="输入对话内容或者需要发送图片的地址" id="person1Input"></textarea>
+				</div>
+				<div class="unit-aside clearfix">
+					<button class="emoji-show-btn">表情</button>
+					<button id="person1SendText">文字</button>
+					<button id="person1SendImgURL">图片</button>
+					<button id="person1SendLongImgURL">长图</button>
+				</div>
+				<div class="emoji-box" name="person1EmojiBox">
+					<div class="emoji-wrap">
+						<a data-name="0" class="emoji-icon">
+							<img src="./src/img/emoji/1/00.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/01.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/02.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/03.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/04.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/05.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/06.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/07.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/08.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/09.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/10.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/11.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/12.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/13.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/14.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/15.gif">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="left-unit clearfix">
+				<div class="unit-top">
+					<div class="person">
+						<p id="person2NameInput" class="person-name" contenteditable="true">名字2</p>
+						<img src="https://dummyimage.com/50x50.jpg/&text=pic" class="person-head" id="person2Head">
+					</div>
+					<div class="img-send">
+						<input type="text" name="person2ImgSend" id="person2HeadInput" placeholder="输入图片地址" class="send-url">
+						<input type="button" value="修改头像" class="send-btn" id="person2HeadSend">
+					</div>
+				</div>
+				<div class="unit-main">
+					<textarea class="textarea" cols="30" rows="10" placeholder="输入对话内容或者需要发送图片的地址" id='person2Input'></textarea>
+				</div>
+				<div class="unit-aside clearfix">
+					<button class="emoji-show-btn">表情</button>
+					<button id="person2SendText">文字</button>
+					<button id="person2SendImgURL">图片</button>
+					<button id="person2SendLongImgURL">长图</button>
+				</div>
+				<div class="emoji-box" name="person2EmojiBox">
+					<div class="emoji-wrap">
+						<a data-name="0" class="emoji-icon">
+							<img src="./src/img/emoji/1/00.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/01.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/02.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/03.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/04.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/05.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/06.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/07.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/08.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/09.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/10.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/11.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/12.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/13.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/14.gif">
+						</a>
+						<a class="emoji-icon">
+							<img src="./src/img/emoji/1/15.gif">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- output -->
+		<div class="right" id="right">
+			<div class="right-main" id="rightContent">
+				<div class="right-wrap" id="rightMain"></div>
+			</div>
+			<div class="right-end">
+				<div id="rightEnd"></div>
+			</div>
+		</div>
+		<script src="./src/js/copy.js"></script>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="./src/js/main.js"></script>
+</body>
+
+</html>
